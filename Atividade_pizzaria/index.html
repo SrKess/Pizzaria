@@ -1,0 +1,31 @@
+<!--Gabriel Kesley da Silva Cesário-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <h1>Faça seu pedido de Pizza</h1>
+    
+    <label for="nome">Nome do cliente:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome" required>
+    
+    <h2>Tamanho da Pizza:</h2>
+    <input type="radio" name="tamanho" value="25" id="pequena"> Pequena (R$ 25,00)
+    <input type="radio" name="tamanho" value="35" id="media"> Média (R$ 35,00)
+    <input type="radio" name="tamanho" value="50" id="grande"> Grande (R$ 50,00)
+    
+    <h2>Adicionais:</h2>
+    <input type="checkbox" name="adicionais" value="5" id="bacon"> Bacon (R$ 5,00)
+    <input type="checkbox" name="adicionais" value="5" id="queijo"> Queijo (R$ 5,00)
+    <input type="checkbox" name="adicionais" value="5" id="champignon"> Champignon (R$ 5,00)
+
+    <button onclick="fazerPedido()">Fazer Pedido</button>
+    
+    <h2>Valor Total: <strong>R$ 00,00</strong></h2>
+
+    <script src="index.js"></script>
+</body>
+</html>
